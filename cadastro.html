@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ML Invest</title> 
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head> 
+
+    <body>
+
+        <header>
+            <div>
+                <img class="header-img" src="header.png">
+            </div>
+            <div class="header-menu">
+                <nav>
+                    <ul>
+                        <li> <a href="home.html"> Home</a> </li>
+                        <li> <a href="home.html#produtos" > Produtos</a> </li>
+                        <li> <a href="cadastro.html"> Cadastro</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>        
+            <form>
+                <h1 class="cadastro-titulo">
+                    Venha investir com a ML. Cadastre-se! 
+                </h1>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" class="cadastro-input">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="cadastro-input" placeholder="seuemail@dominio.com">
+    
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" id="dataNascimento" class="cadastro-input">
+                
+                <label for="CPF">CPF</label>
+                <input type="text" id="CPF" class="cadastro-input" placeholder="xxx.xxx.xxx-xx" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="14">
+    
+                <label for="nomeMae">Nome da Mãe</label>
+                <input type="text" id="nomeMae" class="cadastro-input">
+    
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" class="cadastro-input" placeholder="(xx) xxxxx-xxxx" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="11">
+    
+                <div class="botoes-class">
+                    <input type="button" value="Voltar" class="botao-voltar" onclick="location.href='home.html';">
+                    <input type="submit" value="Enviar" class="botao-enviar" onclick="location.href='#abreModal';">   
+                </div>
+
+            </form>
+
+            <div id="abreModal" class="modalDialog">
+                <div>	
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h1>Página de Cadastro em Construção</h1>
+                    <p>Em breve o cadastro estará em pleno funcionamento!</p>
+                </div>
+            </div>        
+        </main>
+
+        <footer>
+            <div>
+                <p>&#9742; (61) 3321-3030 </p>
+                <p>&#127968; SBS Quadra 01 Lote 32 Bloco G</p>
+                <p>&copy; Copyrght ML Invest - 07/2022</p>
+            </div>
+        </footer>
+    </body>
+</html>

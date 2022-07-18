@@ -1,0 +1,316 @@
+html, body{
+    font: inherit;
+    font-size: 100%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+    vertical-align: baseline;
+}
+
+/*
+    Secção 01
+    Itens responsáveis pelo cabeçalho da página.
+*/
+
+.header-img {
+    width: 100%;
+}
+
+.header-menu {
+    /* margin-top: -5px; */
+    padding: 10px;
+    background: #162546;
+    text-align: center;
+}
+
+header div nav li {
+    display: inline;
+    padding: 50px 50px;
+}
+
+header div nav a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+header div nav a:hover {
+    color: #7796ec;
+    text-decoration: underline;
+}
+
+/*
+    Secção 02
+    Itens responsáveis pela história da empresa: Nossa História, Missão, Objetivo e Valores.   
+*/
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 18px;
+}
+
+.historia-titulos {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding: 45px 0 15px 0;  
+}
+
+.historia-itens {
+	width: 100%;
+    text-align: left;
+}
+
+.historia-itens li {
+	display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 33%;
+}
+
+
+/*
+    Secção 03
+    Itens responáveis pela lista de principais procutos
+*/
+.produtos {
+	width: 100%;
+	margin: 0 auto;
+ 	padding: 15px 0;
+	text-align: center;
+	height: 300px;
+}
+
+.produtos-titulos {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding: 45px 0 20px 0;
+}
+
+.produtos-principais li {
+	width: 22%;
+    margin: 0 1%;
+    vertical-align: top;
+    display: inline-block;
+	padding: 30px 15px;
+    text-align: center;
+	border: 2px solid #000000;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.produtos-principais h2 {
+    margin-bottom: 10px;
+}
+
+.produtos-principais li:hover {
+	border-color: #7796ec;
+	color: #7796ec;
+    transform: scale(1.1);
+}
+
+.produtos-principais li:active {
+	border-color: rgb(0, 13, 157);
+	color: rgb(0, 13, 157);
+}
+
+/*
+    Secçao 04
+    Itens responsáveis pelo formulário da página de cadastro
+*/
+form {
+    width: 50%;
+    margin: 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.cadastro-titulo {
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.cadastro-input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+
+/*
+    Secção 05
+    Itens responsáveis pelos botões
+    O botão 'Quero fazer parte' leva para a página de cadastro
+    O botão 'Voltar' leva para Home
+*/
+
+.botoes-class {
+    width: 100%;
+    text-align: center;
+}
+
+.divbotaoFazerParte{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.botao-voltar{
+    width: 30%;
+    padding: 15px 0;
+    background-color: rgb(156, 164, 171);
+    color: white;
+    font-weight: bold; 
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+.botao-voltar:hover {
+    background-color: rgb(110, 109, 108);
+    transform: scale(1.05);
+    transition: 1s transform;
+}
+
+.botao-enviar {
+    width: 30%;
+    padding: 15px 0;
+    margin-right: 10px;
+    background-color: rgb(114, 152, 228);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    background-color: rgb(72, 72, 170);
+    transform: scale(1.05);
+    transition: 1s transform;
+}
+
+.botao-fazer-parte{
+    width: 45%;
+    padding: 15px 0;
+    background-color: rgb(244, 148, 24);
+    color: white;
+    font-weight: bold; 
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+    margin-top: 45px;
+}
+
+.botao-fazer-parte:hover{
+    background-color: rgb(168, 98, 7);
+    transform: scale(1.05);
+    transition: 1s transform;
+}
+
+/*
+    Secção 06
+    Modal para apresentar a mensagem de página de cadastro em construção
+*/
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 50px;
+    border-radius: 5px;
+    background: #fff;
+    background: -webkit-linear-gradient(#fff, rgb(166, 166, 174));
+    background: -o-linear-gradient(#fff, rgb(123, 125, 133));
+}
+
+.modalDialog h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+.modalDialog p {
+    font-size: 18px;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.close {
+    background: #9c9c9c;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #3f598a;
+}
+
+
+/*
+    Secção 09
+    Itens responsáveis pelo rodapé
+*/
+footer div {
+    width: 100%;
+    padding: 15px 0;
+    background: url(footer1.png);    
+}
+
+footer div p {
+    padding: 0 0;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
